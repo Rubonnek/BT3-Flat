@@ -17,12 +17,14 @@
 
 
     <!-- CORE CSS FRAMEWORK -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- CSS TEMPLATE -->
+<!--
     <link href="{{SITEURL}}/theme/css/reset.css" rel="stylesheet" type="text/css" />
     <link href="{{SITEURL}}/theme/css/framework.css" rel="stylesheet" type="text/css" />
+-->
     <link href="{{SITEURL}}/theme/css/typography.css" rel="stylesheet" type="text/css" />
     <link href="{{SITEURL}}/theme/css/layout.css" rel="stylesheet" type="text/css" />
     <link href="{{SITEURL}}/theme/css/blog.css" rel="stylesheet" type="text/css" />
@@ -55,3 +57,5 @@
         {% endif %}
     {% endfor%}
 </head>
+
+{% include "_includes/contact_form.html" %}
