@@ -5,8 +5,6 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <title>{{ SITENAME }} - {{ SITESUBTITLE }}</title>
-    <meta name="description" content="" />
-    <meta name="Author" content="Ken M. Lai(networktsukkomime.me)" />
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/html5.js"></script>
@@ -27,8 +25,11 @@
     <link href="{{SITEURL}}/theme/css/framework.css" rel="stylesheet" type="text/css" />
     <link href="{{SITEURL}}/theme/css/typography.css" rel="stylesheet" type="text/css" />
     <link href="{{SITEURL}}/theme/css/layout.css" rel="stylesheet" type="text/css" />
-
     <link href="{{SITEURL}}/theme/css/blog.css" rel="stylesheet" type="text/css" />
+
+    {% if CSS_FILE %}
+        <link href="{{SITEURL}}/css/{{CSS_FILE}}" rel="stylesheet" type="text/css" />
+    {% endif %}
 
     <!-- ICONS -->
     {% if FAVICON %}
